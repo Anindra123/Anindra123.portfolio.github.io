@@ -1,9 +1,3 @@
-:root {
-  --grad1: #232526;
-  --grad2: #414345;
-  --arrow-color: rgb(177, 177, 177);
-  --arrow-color-hover: rgb(252, 252, 252);
-}
 .projects h1 {
   color: white;
   font-size: 2rem;
@@ -12,11 +6,11 @@
 }
 .project-container {
   padding: 20px;
-  background-color: var(--grad2);
-  filter: drop-shadow(2px 2px 2px var(--grad1));
+  background-color: #3a3a3a;
+  filter: drop-shadow(2px 2px 2px black);
   margin: 20px;
   border-radius: 0.2em;
-  transition: 0.2s;
+  transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -26,52 +20,65 @@
   width: 100%;
   height: auto;
 }
+
 .project-container .description-col .title p {
   font-weight: bold;
   color: white;
-  padding: 5px 0px 5px 0px;
   font-size: 1.5rem;
 }
 
 .project-container .description-col .title a {
   color: rgb(230, 230, 230);
   font-size: 1rem;
+  max-width: 500px;
 }
 .project-container .description-col .description .heading {
   font-weight: bold;
   color: white;
-  padding: 5px 0px 5px 0px;
   font-size: 1.5rem;
+  padding: 10px 0px 10px 0px;
 }
 
 .project-container .description-col .description p {
   color: rgb(230, 230, 230);
   font-size: 1rem;
+  max-width: 500px;
 }
 
 @media screen and (min-width: 600px) {
   .project-container:hover {
-    transform: translate(-5px, -10px);
-    filter: drop-shadow(5px 5px 2px var(--grad1));
+    transform: translate(-5px, -5px);
+    filter: drop-shadow(10px 10px 5px black);
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (min-width: 700px) {
   .project-container {
     padding: 10px;
-    background-color: var(--grad2);
-    filter: drop-shadow(2px 2px 2px var(--grad1));
+    filter: drop-shadow(2px 2px 2px black);
     align-self: center;
     border-radius: 0.2em;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
+  .description-col {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+  }
+  .project-container .description-col .title p {
+    font-weight: bold;
+    color: white;
+  }
+  .project-container .description-col .description .heading {
+    font-weight: bold;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .project-container {
     padding: 10px;
-    background-color: #181818;
     align-self: center;
     border-radius: 0.2em;
     display: flex;
@@ -81,8 +88,8 @@
   .project-container .description-col .title p {
     font-weight: bold;
     color: white;
-    padding: 5px 0px 5px 0px;
     font-size: 1rem;
+    padding: 5px 0px 5px 0px;
   }
 
   .project-container .description-col .title a {

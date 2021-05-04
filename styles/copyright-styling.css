@@ -1,0 +1,27 @@
+.copyright {
+  background-color: rgb(27, 27, 27);
+  height: 10px;
+
+  padding: 20px 20px 50px 20px;
+
+  outline: 2px;
+  outline-style: solid;
+  outline-color: white;
+}
+.copyright .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyright .container svg {
+  width: 30px;
+  height: 30px;
+  fill: rgb(146, 146, 146);
+  transition: all 0.3s ease-in-out;
+}
+.copyright .container p {
+  color: white;
+}
+.copyright .container svg:hover {
+  fill: white;
+}

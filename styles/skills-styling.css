@@ -1,3 +1,6 @@
+.skills {
+  background-color: #202020;
+}
 .skills h1 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -58,16 +61,17 @@
 
 @media screen and (min-width: 600px) {
   .prog-lang-container a:hover {
-    background-color: var(--grad2);
-    filter: drop-shadow(5px 5px 2px var(--grad1));
+    filter: drop-shadow(5px 5px 2px black);
+    background-color: #3a3a3a;
   }
   .prog-lang-container a:active {
     background-color: var(--grad2);
     filter: drop-shadow(5px 5px 2px var(--grad1));
   }
   .others-container a:hover {
-    background-color: var(--grad2);
-    filter: drop-shadow(5px 5px 2px var(--grad1));
+    background-color: #3a3a3a;
+
+    filter: drop-shadow(5px 5px 2px black);
   }
 }
 
@@ -80,12 +84,18 @@
     width: 30px;
     height: 30px;
   }
+  .prog-lang-container a p {
+    font-size: 0.7rem;
+  }
+  .others-container a p {
+    font-size: 0.7rem;
+  }
   .prog-lang-container a {
-    background-color: #181818;
+    background-color: #000000;
     border-radius: 0.5em;
   }
   .others-container a {
-    background-color: #181818;
+    background-color: #000000;
     border-radius: 0.5em;
   }
 }

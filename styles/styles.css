@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-:root {
-  --grad1: #232526;
-  --grad2: #414345;
-  --arrow-color: rgb(177, 177, 177);
-  --arrow-color-hover: rgb(252, 252, 252);
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +8,7 @@
   font-size: 16px;
 }
 body {
-  background-image: linear-gradient(to right, var(--grad1), var(--grad2));
+  background-color: #151515;
   overflow-x: hidden;
 }
 ul {

@@ -44,6 +44,19 @@
     padding: 20px;
     margin: 40px;
   }
+  .home .container .title {
+    font-size: 1.5rem;
+  }
+  .home .container .description {
+    font-size: 0.8rem;
+  }
+
+  .home .container .btn-container button {
+    margin: 10px 0px 10px 0px;
+    padding: 20px 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
 }
 @media screen and (max-width: 1000px) {
   .home .container .btn-container {
