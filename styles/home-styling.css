@@ -14,9 +14,44 @@
   margin: 10px;
   padding: 10px;
 }
+.home .container .btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 70px;
+}
+.home .container .btn-container button {
+  padding: 15px 32px;
+  background: none;
+  display: inline-block;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.home .container .btn-container button:hover {
+  background-color: white;
+  color: black;
+}
 @media screen and (max-width: 700px) {
   .home .container {
     padding: 20px;
     margin: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .home .container .btn-container {
+    padding: 10px;
+    flex-direction: column;
+    margin: 40px;
+  }
+  .home .container .btn-container button {
+    margin: 10px 0px 10px 0px;
   }
 }

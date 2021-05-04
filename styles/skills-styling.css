@@ -20,7 +20,7 @@
   padding-bottom: 50px;
 }
 
-.prog-lang-container div {
+.prog-lang-container a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,10 +28,9 @@
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   color: white;
-  cursor: pointer;
 }
 
-.prog-lang-container div img {
+.prog-lang-container a img {
   width: 100px;
   height: 100px;
 }
@@ -42,53 +41,50 @@
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   padding-bottom: 50px;
 }
-.others-container .item {
+.others-container a {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px;
   transition: 0.3s;
-}
-
-.others-container .item img {
-  width: 100px;
-  height: 100px;
-}
-
-.others-container .item a {
   text-decoration: none;
   color: white;
 }
 
+.others-container a img {
+  width: 100px;
+  height: 100px;
+}
+
 @media screen and (min-width: 600px) {
-  .prog-lang-container div:hover {
+  .prog-lang-container a:hover {
     background-color: var(--grad2);
     filter: drop-shadow(5px 5px 2px var(--grad1));
   }
-  .prog-lang-container div:active {
+  .prog-lang-container a:active {
     background-color: var(--grad2);
     filter: drop-shadow(5px 5px 2px var(--grad1));
   }
-  .others-container .item:hover {
+  .others-container a:hover {
     background-color: var(--grad2);
     filter: drop-shadow(5px 5px 2px var(--grad1));
   }
 }
 
 @media screen and (max-width: 700px) {
-  .prog-lang-container div img {
+  .prog-lang-container a img {
     width: 30px;
     height: 30px;
   }
-  .others-container .item img {
+  .others-container a img {
     width: 30px;
     height: 30px;
   }
-  .prog-lang-container div {
+  .prog-lang-container a {
     background-color: #181818;
     border-radius: 0.5em;
   }
-  .others-container .item {
+  .others-container a {
     background-color: #181818;
     border-radius: 0.5em;
   }
