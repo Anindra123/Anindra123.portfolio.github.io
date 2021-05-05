@@ -53,7 +53,7 @@
 }
 @media screen and (max-width: 900px) and (min-width: 700px) {
   .project-container {
-    padding: 10px;
+    margin: 20px 0px;
     filter: drop-shadow(2px 2px 2px black);
     align-self: center;
     border-radius: 0.2em;
@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 700px) {
   .project-container {
-    padding: 10px;
+    margin: 20px 0px;
     align-self: center;
     border-radius: 0.2em;
     display: flex;

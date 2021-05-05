@@ -6,7 +6,7 @@
 
   outline: 2px;
   outline-style: solid;
-  outline-color: white;
+  outline-color: rgb(116, 116, 116);
 }
 .copyright .container {
   display: flex;

@@ -81,16 +81,17 @@
 @media screen and (max-width: 700px) {
   .contacts .form-container {
     background-color: #3a3a3a;
-    width: 400px;
-    margin: 5px;
-    padding: 5px;
+    width: 350px;
+    margin: 10px 0px;
+    padding: 0px;
     border-radius: 2px;
   }
   .contacts .form-container button {
     align-self: center;
   }
   .contacts .form-container div {
-    padding: 5px;
+    padding: 0px;
+    margin: 30px 20px;
   }
   .contacts .form-container label {
     margin: 5px 0px 5px 0px;

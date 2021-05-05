@@ -41,14 +41,16 @@
 }
 @media screen and (max-width: 700px) {
   .home .container {
-    padding: 20px;
-    margin: 40px;
+    padding: 0px;
+    margin: 80px 0px;
   }
   .home .container .title {
     font-size: 1.5rem;
   }
   .home .container .description {
     font-size: 0.8rem;
+    margin: 50px 0px;
+    padding: 0px;
   }
 
   .home .container .btn-container button {
