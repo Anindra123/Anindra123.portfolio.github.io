@@ -61,13 +61,10 @@
 
 @media screen and (min-width: 600px) {
   .prog-lang-container a:hover {
-    filter: drop-shadow(5px 5px 2px black);
     background-color: #3a3a3a;
+    filter: drop-shadow(5px 5px 2px black);
   }
-  .prog-lang-container a:active {
-    background-color: var(--grad2);
-    filter: drop-shadow(5px 5px 2px var(--grad1));
-  }
+
   .others-container a:hover {
     background-color: #3a3a3a;
 
@@ -80,6 +77,7 @@
     width: 30px;
     height: 30px;
   }
+
   .others-container a img {
     width: 30px;
     height: 30px;
@@ -97,5 +95,12 @@
   .others-container a {
     background-color: #000000;
     border-radius: 0.5em;
+  }
+  .prog-lang-container a:active {
+    background-color: #3a3a3a;
+  }
+
+  .others-container a:active {
+    background-color: #3a3a3a;
   }
 }

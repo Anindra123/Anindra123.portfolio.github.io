@@ -15,6 +15,7 @@
   font-size: 1.3rem;
   letter-spacing: 3px;
   display: block;
+  cursor: pointer;
 }
 
 .nav-links li .item {
@@ -36,6 +37,7 @@
 .cross-btn {
   display: none;
 }
+
 .burger {
   position: absolute;
   right: 30px;
@@ -83,7 +85,10 @@
   .cross-btn svg {
     width: 20px;
     height: 20px;
-    fill: white;
+    fill: #dadada;
+  }
+  .cross-btn:active svg {
+    fill: #fff;
   }
   .nav-links li a:active {
     text-decoration: underline;

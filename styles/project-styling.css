@@ -13,11 +13,16 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.project-container:active {
+  background-color: #202020;
 }
 
 .project-container img {
   width: 100%;
+  max-width: 800px;
   height: auto;
 }
 
@@ -29,6 +34,7 @@
 
 .project-container .description-col .title a {
   color: rgb(230, 230, 230);
+  text-decoration: none;
   font-size: 1rem;
   max-width: 500px;
 }
@@ -44,7 +50,31 @@
   font-size: 1rem;
   max-width: 500px;
 }
-
+.project-container .made-with .heading {
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 0px 10px 0px;
+}
+.project-container .made-with .items-container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.project-container .made-with .items-container .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-container .made-with .items-container img {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+}
+.project-container .made-with .items-container p {
+  color: rgb(230, 230, 230);
+  font-size: 0.7rem;
+}
 @media screen and (min-width: 600px) {
   .project-container:hover {
     transform: translate(-5px, -5px);
@@ -55,8 +85,6 @@
   .project-container {
     margin: 20px 0px;
     filter: drop-shadow(2px 2px 2px black);
-    align-self: center;
-    border-radius: 0.2em;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -66,45 +94,39 @@
     margin: 20px;
     padding: 20px;
   }
-  .project-container .description-col .title p {
-    font-weight: bold;
-    color: white;
-  }
-  .project-container .description-col .description .heading {
-    font-weight: bold;
-    color: white;
-  }
 }
 
 @media screen and (max-width: 700px) {
   .project-container {
     margin: 20px 0px;
-    align-self: center;
-    border-radius: 0.2em;
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .project-container:active {
+    background-color: #202020;
   }
   .project-container .description-col .title p {
-    font-weight: bold;
-    color: white;
     font-size: 1rem;
     padding: 5px 0px 5px 0px;
   }
 
   .project-container .description-col .title a {
-    color: rgb(230, 230, 230);
     font-size: 0.8rem;
   }
   .project-container .description-col .description .heading {
-    font-weight: bold;
-    color: white;
     padding: 5px 0px 5px 0px;
     font-size: 1rem;
   }
+  .project-container .made-with .heading {
+    font-size: 1rem;
+    padding: 5px 0px 5px 0px;
+  }
 
   .project-container .description-col .description p {
-    color: rgb(230, 230, 230);
     font-size: 0.8rem;
+  }
+  .project-container .made-with .items-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
