@@ -1,7 +1,8 @@
 const App = () => {
-  const name_feild = document.querySelector("#name");
-  const email_feild = document.querySelector("#email");
-  const message = document.querySelector("#message");
+  const name_feild = document.querySelector("#user-name");
+  const email_feild = document.querySelector("#user-email");
+
+  const message = document.querySelector("#message-box");
   const submit = document.querySelector(".submit-button");
   const error_message = (msg, className) => {
     document.querySelector(`${className} .err-text`).innerHTML = msg;
@@ -81,28 +82,40 @@ const App = () => {
       message.value.length === 0
     ) {
       emptyForm();
+      return false;
     } else if (!checkName()) {
-      document
-        .querySelector("#contacts-section")
-        .scrollIntoView({ behavior: "smooth" });
+      return false;
     } else if (!checkEmail()) {
-      document
-        .querySelector("#contacts-section")
-        .scrollIntoView({ behavior: "smooth" });
+      return false;
     } else if (message.value.length === 0) {
-      document
-        .querySelector("#contacts-section")
-        .scrollIntoView({ behavior: "smooth" });
       noMessage();
+      return false;
+    } else {
+      return true;
     }
   };
+  const sendMessage = () => {
+    document
+      .querySelector("form")
+      .setAttribute("action", "https://formsubmit.co/bivasdas911@gmail.com");
+    document.querySelector("form").setAttribute("method", "POST");
+  };
+  submit.addEventListener("click", (e) => {
+    if (!validate()) {
+      e.preventDefault();
+      document
+        .querySelector(".contacts")
+        .scrollIntoView({ behavior: "smooth" });
+    } else {
+      sendMessage();
+    }
+  });
   name_feild.addEventListener("input", checkName);
   email_feild.addEventListener("input", checkEmail);
   message.addEventListener("input", () => {
     message.style.border = "none";
     document.querySelector(".message-container .err-text").innerHTML = "";
   });
-  submit.addEventListener("click", validate);
 };
 
 App();

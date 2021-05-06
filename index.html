@@ -157,19 +157,30 @@
         <form>
           <div class="name-container">
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your Name" />
+            <input
+              type="text"
+              id="user-name"
+              name="name"
+              placeholder="Your Name"
+            />
             <small class="err-text"></small>
           </div>
           <div class="email-container">
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="info@example.com" />
+            <input
+              type="text"
+              id="user-email"
+              name="email"
+              placeholder="info@example.com"
+            />
             <small class="err-text"></small>
           </div>
           <div class="message-container">
             <label for="message">Message</label>
             <textarea
               rows="5"
-              id="message"
+              id="message-box"
+              name="message"
               placeholder="Enter your message"
             ></textarea>
             <small class="err-text"></small>
