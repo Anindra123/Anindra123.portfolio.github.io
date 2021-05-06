@@ -39,6 +39,8 @@
   border: none;
   border-radius: 2px;
   outline: none;
+
+  font-family: "Poppins", sans-serif;
 }
 .check-box::after {
   display: inline-block;
@@ -50,7 +52,7 @@
   font-weight: 900;
   content: "\f058";
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   right: 10px;
   color: rgb(25, 151, 109);
   visibility: visible;
@@ -65,7 +67,7 @@
   font-weight: 900;
   content: "\f06a";
   position: absolute;
-  bottom: 35px;
+  bottom: 40px;
   right: 10px;
   color: #ff3333;
   visibility: visible;
@@ -82,6 +84,8 @@
   outline: none;
   border: none;
   border-radius: 2px;
+
+  font-family: "Poppins", sans-serif;
 }
 .contacts .form-container button {
   width: 200px;
