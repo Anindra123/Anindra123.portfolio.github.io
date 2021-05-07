@@ -16,10 +16,11 @@
   margin-bottom: 50px;
 }
 
-.prog-lang-container {
+.prog-lang-container,
+.others-container {
   display: grid;
   gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   padding-bottom: 50px;
 }
 
@@ -38,12 +39,6 @@
   height: 100px;
 }
 
-.others-container {
-  display: grid;
-  gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  padding-bottom: 50px;
-}
 .others-container a {
   display: flex;
   flex-direction: column;

@@ -112,19 +112,25 @@
     padding: 20px;
     border-radius: 2px;
   }
+
   .contacts .form-container button {
     align-self: center;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .contacts .form-container {
-    background-color: #3a3a3a;
-    width: 350px;
-    margin: 10px 0px;
-    padding: 0px;
-    border-radius: 2px;
+  .contacts {
+    padding: 5em 0.7em;
   }
+
+  .contacts .form-container {
+    background-color: #202020;
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 2px;
+    padding: 2px;
+  }
+
   .contacts .form-container button {
     align-self: center;
   }
