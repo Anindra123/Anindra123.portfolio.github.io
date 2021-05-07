@@ -58,3 +58,22 @@ html {
 .thankyou-section .container a:active {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 900px) {
+  .thankyou-section .container {
+    width: 350px;
+    height: 500px;
+    margin: 50px;
+  }
+  .thankyou-section .container .title {
+    font-size: 2rem;
+    margin: 50px;
+  }
+  .thankyou-section .container a {
+    margin: 50px;
+  }
+  .thankyou-section .container .desc {
+    font-size: 1rem;
+    margin: 50px;
+  }
+}
