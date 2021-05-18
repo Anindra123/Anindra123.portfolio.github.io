@@ -10,6 +10,9 @@ const Nav = () => {
   const skills_nav = document.getElementById("skills-nav");
   const projects_nav = document.getElementById("projects-nav");
   //const link = document.querySelectorAll(".nav-links .item");
+  window.addEventListener("scroll", () => {
+    mobile_nav_icon.style.opacity = window.pageYOffset === 0 ? 1 : 0.33;
+  });
   mobile_nav_icon.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
   });

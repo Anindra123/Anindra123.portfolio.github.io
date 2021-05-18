@@ -5,15 +5,14 @@
   text-align: center;
 }
 .project-container {
-  padding: 20px;
   background-color: #3a3a3a;
-  filter: drop-shadow(2px 2px 2px black);
-  margin: 20px;
   border-radius: 0.2em;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 40px;
+  margin: 40px;
   cursor: pointer;
 }
 .project-container:active {
@@ -21,9 +20,10 @@
 }
 
 .project-container img {
-  width: 100%;
+  width: 500px;
   max-width: 800px;
   height: auto;
+  transition: transform 0.4s ease-in-out;
 }
 
 .project-container .description-col .title p {
@@ -74,16 +74,15 @@
   color: rgb(230, 230, 230);
   font-size: 0.7rem;
 }
-@media screen and (min-width: 600px) {
-  .project-container:hover {
-    transform: translate(-5px, -5px);
-    filter: drop-shadow(10px 10px 5px black);
-  }
+.project-container:hover {
+  filter: drop-shadow(0px 0px 10px black);
+}
+.project-container:hover img {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 900px) and (min-width: 700px) {
   .project-container {
     margin: 20px 0px;
-    filter: drop-shadow(2px 2px 2px black);
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -105,6 +104,16 @@
   .project-container:active {
     background-color: #202020;
   }
+  .project-container .img-col {
+    align-self: center;
+  }
+  .project-container img {
+    width: 300px;
+  }
+  .project-container:hover img {
+    transform: scale(1.1);
+  }
+
   .project-container .description-col .title p {
     font-size: 1rem;
     padding: 5px 0px 5px 0px;
