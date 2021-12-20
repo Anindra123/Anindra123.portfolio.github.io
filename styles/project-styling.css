@@ -58,7 +58,7 @@
 .project-container .made-with .items-container {
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
 }
 .project-container .made-with .items-container .item {
   display: flex;
