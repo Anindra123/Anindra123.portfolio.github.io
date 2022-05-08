@@ -7,6 +7,8 @@ const projects_link = () => {
   const project_management_app = document.getElementById(
     "Project-Management-App"
   );
+  const etone_app = document.getElementById("Etone-App");
+
   web_portfolio_project.addEventListener("click", () => {
     window.open("https://github.com/Anindra123/portfolio");
   });
@@ -18,6 +20,10 @@ const projects_link = () => {
   });
   project_management_app.addEventListener("click", () => {
     window.open("https://github.com/Anindra123/ProjectManagementApp");
+  });
+
+  etone_app.addEventListener("click",()=>{
+    window.open("https://github.com/Anindra123/Etone");
   });
 };
 
