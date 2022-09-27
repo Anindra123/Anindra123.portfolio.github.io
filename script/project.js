@@ -8,6 +8,9 @@ const projects_link = () => {
     "Project-Management-App"
   );
   const etone_app = document.getElementById("Etone-App");
+  const path_finding_visualizer = document.getElementById(
+    "pathfinding-visualizer"
+  );
 
   web_portfolio_project.addEventListener("click", () => {
     window.open("https://github.com/Anindra123/portfolio");
@@ -22,8 +25,11 @@ const projects_link = () => {
     window.open("https://github.com/Anindra123/ProjectManagementApp");
   });
 
-  etone_app.addEventListener("click",()=>{
+  etone_app.addEventListener("click", () => {
     window.open("https://github.com/Anindra123/Etone");
+  });
+  path_finding_visualizer.addEventListener("click", () => {
+    window.open("https://github.com/Anindra123/PathFindingVisualizer");
   });
 };
 

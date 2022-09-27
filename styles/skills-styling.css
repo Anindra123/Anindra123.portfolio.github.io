@@ -21,7 +21,7 @@
 .others-container {
   display: grid;
   gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding-bottom: 50px;
 }
 
